@@ -5,11 +5,18 @@ import Footer from './Footer';
 class Layout extends Component {
   render() {
     return (
-        <div>
-        	<Header />
-            	{this.props.children}
-            <Footer />
-        </div>
+    	<div className="page category-page">
+            <div id="spinner">
+                <div className="spinner-img">
+                    <img alt="Opportunities Preloader" src="images/loader.gif" />
+                    <h2>Please Wait.....</h2>
+                </div>
+            </div>
+	    	<Header />
+	        	{this.props.children}
+	        	<div className="custom-set-footer"></div>
+	        <Footer />
+	    </div>
     );
   }
 }

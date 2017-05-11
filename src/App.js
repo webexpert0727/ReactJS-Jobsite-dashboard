@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import { Route, Router, browserHistory } from 'react-router';
 import './App.css';
 import Home from './components/Home';
-import User from './components/User';
+import Company from './components/Company';
 import Login from './components/Login';
 import Register from './components/Register';
-// import Layout from './components/Layout';
+import UserDashboard from './components/UserDashboard';
+import Users from './components/Users';
 
 class App extends Component {
   render() {
@@ -15,7 +16,9 @@ class App extends Component {
 	        <Route path={"login"} component={Login} />
 	        <Route path={"register"} component={Register} />
 	        <Route path={"home"} component={Home} />
-	        <Route path={"user"} component={User} />
+	        <Route path={"company"} component={Company} />
+            <Route path={"user-dashboard"} component={UserDashboard} />
+            <Route path={"users"} component={Users} />
       	</Router>
     )
   }

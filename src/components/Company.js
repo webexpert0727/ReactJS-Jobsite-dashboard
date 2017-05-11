@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Layout from './Layout';
 
-class User extends Component {
+class Company extends Component {
   render() {
     return (
         <Layout>
@@ -165,4 +165,4 @@ class User extends Component {
   }
 }
 
-export default User;
+export default Company;
