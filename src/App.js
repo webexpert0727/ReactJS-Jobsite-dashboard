@@ -16,7 +16,7 @@ class App extends Component {
 	        <Route path={"login"} component={Login} />
 	        <Route path={"register"} component={Register} />
 	        <Route path={"home"} component={Home} />
-	        <Route path={"company"} component={Company} />
+	        <Route path={"employee-dashboard"} component={Company} />
             <Route path={"user-dashboard"} component={UserDashboard} />
             <Route path={"users"} component={Users} />
       	</Router>
