@@ -33,7 +33,7 @@ class Login extends Component {
                                     <a href="">Forgot Password?</a>
                                 </div>
                                 <div className="loginbox-submit">
-                                    <input type="button" className="btn btn-default btn-block" value="Login" />
+                                    <a href="/employee-dashboard"><input type="button" className="btn btn-default btn-block" value="Login" /></a>
                                 </div>
                                 <div className="loginbox-signup">
                                     <a href="/register">Sign Up With Email</a>
