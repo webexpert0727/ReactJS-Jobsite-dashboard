@@ -196,7 +196,7 @@ class Header extends Component {
                             <li><a href="#"><i className="fa fa-user"></i> My Profile</a></li>
                             <li><a href="#"><i className="fa fa-mail-forward"></i> Inbox</a></li>
                             <li><a href="#"><i className="fa fa-gear"></i> Account Setting</a></li>
-                            <li><a href="#"><i className="fa fa-power-off"></i> Logout</a></li>
+                            <li><a href="/login"><i className="fa fa-power-off"></i> Logout</a></li>
                         </ul>
                     </li>
                 </ul>
