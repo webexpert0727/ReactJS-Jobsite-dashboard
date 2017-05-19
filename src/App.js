@@ -16,9 +16,14 @@ class App extends Component {
 	        <Route path={"login"} component={Login} />
 	        <Route path={"register"} component={Register} />
             <Route path={"users"} component={Users} />
+            <Route path={"all-candidates"} component={Users} />
+            <Route path={"matches"} component={Users} />
+            <Route path={"candidates-placed"} component={Users} />
 	        <Route path={"employee-dashboard"} component={Company} />
             <Route path={"edit-profile"} component={EditProfile} />
             <Route path={"active-jobs"} component={ActiveJobs} />
+            <Route path={"interviews-requested"} component={ActiveJobs} />
+            <Route path={"accepted-interviews"} component={ActiveJobs} />
       	</Router>
     )
   }

@@ -267,11 +267,11 @@ class Users extends Component {
 		                                <div className="widget">
 		                                    <div className="widget-heading"><span className="title">Hot Categories</span></div>
 		                                    <ul className="categories-module">
-		                                        <li> <a href=""> Computer and IT <span>(1021)</span> </a> </li>
-		                                        <li> <a href=""> Construction / Facilities <span>(54)</span> </a> </li>
-		                                        <li> <a href=""> Telecommunications<span>(13)</span> </a> </li>
-		                                        <li> <a href=""> Real Estate<span>(23)</span> </a> </li>
-		                                        <li> <a href=""> Healthcare <span>(42)</span> </a> </li>
+		                                        <li> <a href="">Location<span></span> </a> </li>
+		                                        <li> <a href=""> Years Experience <span></span> </a> </li>
+		                                        <li> <a href=""> Salary Requirements<span></span> </a> </li>
+		                                        <li> <a href=""> Industry Experience<span></span> </a> </li>
+		                                        <li> <a href=""> Education <span></span> </a> </li>
 		                                    </ul>
 		                                </div>
 		                                <div className="widget">

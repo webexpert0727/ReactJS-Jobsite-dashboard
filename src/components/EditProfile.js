@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import EmployeeLeftSide from './Layout/EmployeeLeftSide';
 import Layout from './Layout/Layout';
 
 class EditProfile extends Component {
@@ -28,40 +28,7 @@ class EditProfile extends Component {
 		            <div className="container">
 		                <div className="row">
 		                    <div className="col-md-12 col-sm-12 col-xs-12 nopadding">
-		                        <div className="col-md-4 col-sm-4 col-xs-12">
-					                <div className="panel">
-					                    <div className="dashboard-logo-sidebar">
-					                        <img className="img-responsive center-block" src="images/company/logo1.jpg" alt="Logo" />
-					                    </div>
-					                    <div className="text-center dashboard-logo-sidebar-title">
-					                        <h4>Your Company Agency Pvt. Ltd</h4>
-					                    </div>
-					                </div>
-					                <div className="profile-nav">
-					                    <div className="panel">
-					                        <ul className="nav nav-pills nav-stacked">
-					                            <li>
-					                                <a href="/employee-dashboard"> <i className="fa fa-user"></i> Dashboard</a>
-					                            </li>
-					                            <li className="active">
-					                                <a href="/edit-profile"> <i className="fa fa-edit"></i> Edit Profile</a>
-					                            </li>
-					                            <li>
-					                                <a href="company-dashboard-resume.html"> <i className="fa fa-file-o"></i>Resume </a>
-					                            </li>
-					                            <li>
-					                                <a href="/active-jobs"> <i className="fa  fa-list-ul"></i> Active Jobs</a>
-					                            </li>
-					                            <li>
-					                                <a href="company-dashboard-featured-jobs.html"> <i className="fa  fa-list-alt"></i> Featured Jobs</a>
-					                            </li>
-					                            <li>
-					                                <a href="company-dashboard-followers.html"> <i className="fa  fa-bookmark-o"></i> Followers </a>
-					                            </li>
-					                        </ul>
-					                    </div>
-					                </div>
-					            </div>
+		                        <EmployeeLeftSide />
 		                        <div className="col-md-8 col-sm-8 col-xs-12">
 		                            <div className="heading-inner first-heading">
 		                                <p className="title">Edit Profile</p>
