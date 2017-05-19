@@ -272,6 +272,7 @@ class Users extends Component {
 		                                        <li> <a href=""> Salary Requirements<span></span> </a> </li>
 		                                        <li> <a href=""> Industry Experience<span></span> </a> </li>
 		                                        <li> <a href=""> Education <span></span> </a> </li>
+		                                        <li> <a href=""> Job Search Status <span></span> </a> </li>
 		                                    </ul>
 		                                </div>
 		                                <div className="widget">
