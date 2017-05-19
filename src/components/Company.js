@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+
 import Layout from './Layout/Layout';
+
 
 class Company extends Component {
   render() {
@@ -93,16 +95,16 @@ class Company extends Component {
 	                                <div className="panel">
 	                                    <ul className="nav nav-pills nav-stacked">
 	                                        <li className="active">
-	                                            <a href="company-dashboard.html"> <i className="fa fa-user"></i> Dashboard</a>
+	                                            <a href="/employee-dashboard"> <i className="fa fa-user"></i> Dashboard</a>
 	                                        </li>
 	                                        <li>
-	                                            <a href="company-dashboard-edit-profile.html"> <i className="fa fa-edit"></i> Edit Profile</a>
+	                                            <a href="/edit-profile"> <i className="fa fa-edit"></i> Edit Profile</a>
 	                                        </li>
 	                                        <li>
 	                                            <a href="company-dashboard-resume.html"> <i className="fa fa-file-o"></i>Resume </a>
 	                                        </li>
 	                                        <li>
-	                                            <a href="company-dashboard-active-jobs.html"> <i className="fa  fa-list-ul"></i> Active Jobs</a>
+	                                            <a href="/active-jobs"> <i className="fa  fa-list-ul"></i> Active Jobs</a>
 	                                        </li>
 	                                        <li>
 	                                            <a href="company-dashboard-featured-jobs.html"> <i className="fa  fa-list-alt"></i> Featured Jobs</a>

@@ -7,23 +7,23 @@ class Header extends Component {
         <nav id="menu-1" className="mega-menu fa-change-black" data-color=""> 
             <section className="menu-list-items container"> 
                 <ul className="menu-logo">
-                    <li> <a href="index.html"> <img src={logo} alt="logo" className="img-responsive" /> </a> </li>
+                    <li><a href="index.html"><img src={logo} alt="logo" className="img-responsive" /></a></li>
                 </ul>
                 <ul className="menu-links pull-right">
                     <li> <a href="#"> Home <i className="fa fa-angle-down fa-indicator"></i></a>
                         <ul className="drop-down-multilevel">
-                            <li><a href="#">Home Style  <label className="label label-info">New</label> <i className="fa fa-angle-right fa-indicator"></i> </a> 
-                            <ul className="drop-down-multilevel">
-                                <li><a href="index.html"><i className="fa fa-angle-right"></i> Home Default</a></li>
-                                <li><a href="index2.html"><i className="fa fa-angle-right"></i> Home Text Rotator</a></li>
-                                <li><a href="index3.html"><i className="fa fa-angle-right"></i> Home Transparent</a></li>
-                                <li><a href="index4.html"><i className="fa fa-angle-right"></i> Home With Slider</a></li>
-                                <li><a href="index5.html"><i className="fa fa-angle-right"></i> Home 5 (Static Sections)</a></li>
-                                <li><a href="index6.html"><i className="fa fa-angle-right"></i> Home Advance Search</a></li>
-                                <li><a href="index7.html"><i className="fa fa-angle-right"></i> Home Map <label className="label label-info">New</label></a></li>
-                                <li><a href="index8.html"><i className="fa fa-angle-right"></i> Home Search Header <label className="label label-info">New</label></a></li>
-                            </ul>
-                        </li>
+                            <li><a href="#">Home Style  <label className="label label-info">New</label> <i className="fa fa-angle-right fa-indicator"></i></a> 
+                                <ul className="drop-down-multilevel">
+                                    <li><a href="index.html"><i className="fa fa-angle-right"></i> Home Default</a></li>
+                                    <li><a href="index2.html"><i className="fa fa-angle-right"></i> Home Text Rotator</a></li>
+                                    <li><a href="index3.html"><i className="fa fa-angle-right"></i> Home Transparent</a></li>
+                                    <li><a href="index4.html"><i className="fa fa-angle-right"></i> Home With Slider</a></li>
+                                    <li><a href="index5.html"><i className="fa fa-angle-right"></i> Home 5 (Static Sections)</a></li>
+                                    <li><a href="index6.html"><i className="fa fa-angle-right"></i> Home Advance Search</a></li>
+                                    <li><a href="index7.html"><i className="fa fa-angle-right"></i> Home Map <label className="label label-info">New</label></a></li>
+                                    <li><a href="index8.html"><i className="fa fa-angle-right"></i> Home Search Header <label className="label label-info">New</label></a></li>
+                                </ul>
+                            </li>
                             <li><a href="#">Headers <i className="fa fa-angle-right fa-indicator"></i> </a> 
                                 <ul className="drop-down-multilevel">
                                     <li><a href="index7.html"> <i className="fa fa-forumbee"></i> Fixed Menu </a></li>
@@ -120,8 +120,8 @@ class Header extends Component {
                                     <h4>Company Pages</h4>
                                     <ul>
                                         <li><a href="company-dashboard.html"> <i className="fa fa-angle-right"></i> Dashboard</a></li>
-                                        <li><a href="company-dashboard-edit-profile.html"> <i className="fa fa-angle-right"></i> Edit Profile</a></li>
-                                        <li><a href="company-dashboard-active-jobs.html"> <i className="fa fa-angle-right"></i> Active Jobs</a></li>
+                                        <li><a href="/edit-profile"> <i className="fa fa-angle-right"></i> Edit Profile</a></li>
+                                        <li><a href="/active-jobs"> <i className="fa fa-angle-right"></i> Active Jobs</a></li>
                                         <li><a href="company-dashboard-followers.html"> <i className="fa fa-angle-right"></i> Followers</a></li>
                                         <li><a href="company-dashboard-resume.html"> <i className="fa fa-angle-right"></i> Job Resume</a></li>
                                     <li><a href="elements.html"> <i className="fa fa-angle-right"></i> UI Elements <label className="label label-info">New</label></a></li>
@@ -135,7 +135,7 @@ class Header extends Component {
                                     <li><a href="user-followed-companies.html"> <i className="fa fa-angle-right"></i> Followed Companies</a></li>
                                     <li><a href="user-job-applied.html"> <i className="fa fa-angle-right"></i> Job Applied</a></li>
                                     <li><a href="user-resume.html"> <i className="fa fa-angle-right"></i> Use Resume</a></li>
-                                    <li><a href="users.html"> <i className="fa fa-angle-right"></i> All Users </a></li>
+                                    <li><a href="/users"> <i className="fa fa-angle-right"></i> All Users </a></li>
                                     <li><a href="user-resume-build.html"> <i className="fa fa-angle-right"></i> Build Resume  <label className="label label-info">New</label></a></li>
                                 </ul>
                                 </div>

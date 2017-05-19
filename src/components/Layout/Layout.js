@@ -14,7 +14,6 @@ class Layout extends Component {
             </div>
 	    	<Header />
 	        	{this.props.children}
-	        	<div className="custom-set-footer"></div>
 	        <Footer />
 	    </div>
     );

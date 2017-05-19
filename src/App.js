@@ -4,6 +4,9 @@ import './App.css';
 import Company from './components/Company';
 import Login from './components/Login';
 import Register from './components/Register';
+import EditProfile from './components/EditProfile';
+import ActiveJobs from './components/ActiveJobs';
+import Users from './components/Users';
 
 class App extends Component {
   render() {
@@ -12,7 +15,10 @@ class App extends Component {
             <Route path={"/"} component={Login} />
 	        <Route path={"login"} component={Login} />
 	        <Route path={"register"} component={Register} />
+            <Route path={"users"} component={Users} />
 	        <Route path={"employee-dashboard"} component={Company} />
+            <Route path={"edit-profile"} component={EditProfile} />
+            <Route path={"active-jobs"} component={ActiveJobs} />
       	</Router>
     )
   }
