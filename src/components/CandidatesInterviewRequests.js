@@ -1,24 +1,23 @@
 import React, { Component } from 'react';
-
-import EmployerLeftSide from './Layout/EmployerLeftSide';
+import CandidatesLeftMenu from './Layout/CandidatesLeftMenu';
+import CandidatesBottom from './Layout/CandidatesBottom';
 import Layout from './Layout/Layout';
 
-class ActiveJobs extends Component {
-	render() {
+class CandidatesInterviewRequests extends Component {
+	render () {
 		return (
 			<Layout>
 				<section className="job-breadcrumb">
 		            <div className="container">
 		                <div className="row">
 		                    <div className="col-md-6 col-sm-7 co-xs-12 text-left">
-		                        <h3>Featured Jobs</h3>
+		                        <h3>Edit profile</h3>
 		                    </div>
 		                    <div className="col-md-6 col-sm-5 co-xs-12 text-right">
 		                        <div className="bread">
 		                            <ol className="breadcrumb">
-		                                <li><a href="#">Home</a></li>
-		                                <li><a href="#">Dashboard</a></li>
-		                                <li className="active">Edit Profile</li>
+		                                <li><a href="#">Home</a> </li>
+		                                <li className="active">edit profile</li>
 		                            </ol>
 		                        </div>
 		                    </div>
@@ -29,10 +28,12 @@ class ActiveJobs extends Component {
 		            <div className="container">
 		                <div className="row">
 		                    <div className="col-md-12 col-sm-12 col-xs-12 nopadding">
-		                        <EmployerLeftSide />
+		                        
+		                        <CandidatesLeftMenu />
+
 		                        <div className="col-md-8 col-sm-8 col-xs-12">
 		                            <div className="heading-inner first-heading">
-		                                <p className="title">Active jobs</p>
+		                                <p className="title">Job applied</p>
 		                            </div>
 		                            <div className="all-jobs-list-box2">
 		                                <div className="job-box job-box-2">
@@ -147,9 +148,12 @@ class ActiveJobs extends Component {
 		                </div>
 		            </div>
 		        </section>
-			</Layout>
+		        
+		        <CandidatesBottom />
+		        
+		    </Layout>
 		);
 	}
 }
 
-export default ActiveJobs;
+export default CandidatesInterviewRequests;

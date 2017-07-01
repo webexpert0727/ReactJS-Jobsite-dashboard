@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-class EmployeeLeftSide extends Component {
-
+class EmployerLeftSide extends Component {
    
 	render() {
 		return (
@@ -18,7 +17,7 @@ class EmployeeLeftSide extends Component {
                     <div className="panel">
                         <ul className="nav nav-pills nav-stacked">
                             <li>
-                                <a href="/employee-dashboard"> <i className="fa fa-user"></i> Dashboard</a>
+                                <a href="/employer-dashboard"> <i className="fa fa-user"></i> Dashboard</a>
                             </li>
                             <li>
                                 <a href="/all-candidates"> <i className="fa  fa-users"></i> All Candidate </a>
@@ -27,16 +26,7 @@ class EmployeeLeftSide extends Component {
                                 <a href="/edit-profile"> <i className="fa fa-edit"></i> Edit Profile</a>
                             </li>
                             <li>
-                                <a href="company-dashboard-resume.html"> <i className="fa fa-file-o"></i>Resume </a>
-                            </li>
-                            <li>
                                 <a href="/active-jobs"> <i className="fa  fa-list-ul"></i> Active Jobs</a>
-                            </li>
-                            <li>
-                                <a href="company-dashboard-featured-jobs.html"> <i className="fa  fa-list-alt"></i> Featured Jobs</a>
-                            </li>
-                            <li>
-                                <a href="company-dashboard-followers.html"> <i className="fa  fa-bookmark-o"></i> Followers </a>
                             </li>
                             <li>
                                 <a href="/interviews-requested"> <i className="fa  fa-registered"></i> Interviews Requested </a>
@@ -59,4 +49,4 @@ class EmployeeLeftSide extends Component {
 	}
 }
 
-export default EmployeeLeftSide;
+export default EmployerLeftSide;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import EmployeeLeftSide from './Layout/EmployeeLeftSide';
+import EmployerLeftSide from './Layout/EmployerLeftSide';
 import Layout from './Layout/Layout';
 
 class EditProfile extends Component {
@@ -28,7 +28,7 @@ class EditProfile extends Component {
 		            <div className="container">
 		                <div className="row">
 		                    <div className="col-md-12 col-sm-12 col-xs-12 nopadding">
-		                        <EmployeeLeftSide />
+		                        <EmployerLeftSide />
 		                        <div className="col-md-8 col-sm-8 col-xs-12">
 		                            <div className="heading-inner first-heading">
 		                                <p className="title">Edit Profile</p>
