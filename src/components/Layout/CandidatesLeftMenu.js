@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+ 
 class CandidatesLeftMenu extends Component {
 
    

@@ -1,10 +1,28 @@
 import React, { Component } from 'react';
-
+import axios from 'axios';
 import Layout from './Layout/Layout';
 import CandidatesBottom from './Layout/CandidatesBottom';
+const baseUrl = 'https://595e63cfffb74e0011021722.mockapi.io/staging/';  // URL to web api
 
 class Candidates extends Component {
+		constructor(props) {
+    super(props);
+
+    this.state = {
+      data: []
+    };
+  }
+
+  componentDidMount() {
+	  debugger;
+      axios.get(baseUrl + 'candidates')
+     .then(response => {
+		  this.setState({data: response.data[0]})
+ });
+}
+
   render() {
+
     return (
         <Layout>
 		<section className="dashboard parallex">
@@ -65,6 +83,7 @@ class Candidates extends Component {
 			</div>
 			</div>
 			</div>
+			
 			  <div className="col-md-8 col-sm-8 col-xs-12">
 				  <div className="job-short-detail">
 				  <div className="heading-inner">
@@ -72,22 +91,22 @@ class Candidates extends Component {
 			  </div>
 			  <dl>
 			  <dt>First Name:</dt>
-			  <dd>Arslan Chaudhary</dd>
+			  <dd>{this.state.data.fullName}</dd>
 
 			  <dt>Father Name:</dt>
-			  <dd> Ch Tariq Ayoub </dd>
+			  <dd>{this.state.data.fullName}</dd>
 
 			  <dt>Date Of Birth:</dt>
 			  <dd> 15 Feb,2015 </dd>
 
 			  <dt>Phone:</dt>
-			  <dd>+99 333 1234567 </dd>
+			  <dd>{this.state.data.phone}</dd>
 
 			  <dt>Email:</dt>
-			  <dd>martine-aug234@domain.com </dd>
+			  <dd>{this.state.data.email}</dd>
 
 			  <dt>Last Education:</dt>
-			  <dd>Phd in Information Technology</dd>
+			  <dd>{this.state.data.education}</dd>
 
 			  <dt>Address:</dt>
 			  <dd>234 Uptown new City Tower </dd>
@@ -106,7 +125,7 @@ class Candidates extends Component {
 			  <div className="heading-inner">
 				  <p className="title">Some Line About Me</p>
 			  </div>
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Lorem ipsum dolor sit amet. </p>
+			  <p>{this.state.data.summary}</p>
 
 			  </div>
 			  </div>
@@ -117,6 +136,7 @@ class Candidates extends Component {
     </Layout>
     );
   }
+
 }
 
 export default Candidates;
