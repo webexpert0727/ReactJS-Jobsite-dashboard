@@ -4,6 +4,7 @@ import CandidatesBottom from './Layout/CandidatesBottom';
 import Layout from './Layout/Layout';
 
 class CandidatesEditProfile extends Component {
+
 	render () {
 		return (
 			<Layout>
@@ -37,17 +38,18 @@ class CandidatesEditProfile extends Component {
 		                            </div>
 		                            <div className="col-md-12 col-sm-12 col-xs-12 nopadding">
 		                                <div className="profile-edit row">
-		                                    <form>
+
+		                                    <form onSubmit={this.sumbitEditForm}>
 		                                        <div className="col-md-6 col-sm-12">
 		                                            <div className="form-group">
-		                                                <label>First Name <span className="required">*</span></label>
-		                                                <input type="text" placeholder="" className="form-control" />
+		                                                <label>First Name <span className="required" >*</span></label>
+		                                                <input type="text" name="firstName" placeholder="" className="form-control" />
 		                                            </div>
 		                                        </div>
 		                                        <div className="col-md-6 col-sm-12">
 		                                            <div className="form-group">
 		                                                <label>Last Name <span className="required">*</span></label>
-		                                                <input type="text" placeholder="" className="form-control" />
+		                                                <input type="text"  placeholder="" className="form-control" />
 		                                            </div>
 		                                        </div>
 		                                        <div className="col-md-6 col-sm-12">
@@ -87,7 +89,7 @@ class CandidatesEditProfile extends Component {
 		                                            </div>
 		                                        </div>
 		                                        <div className="col-md-12 col-sm-12">
-		                                            <button className="btn btn-default pull-right"> Save Profile <i className="fa fa-angle-right"></i></button>
+		                                            <button className="btn btn-default pull-right" value="Submit"> Save Profile <i className="fa fa-angle-right"></i></button>
 		                                        </div>
 		                                    </form>
 		                                </div>

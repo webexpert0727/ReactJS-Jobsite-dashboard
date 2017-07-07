@@ -1,8 +1,25 @@
 import React, { Component } from 'react';
- 
-class CandidatesLeftMenu extends Component {
+import { getApiCandidates } from '../../api/requests'
 
-   
+class CandidatesLeftMenu extends Component {
+		constructor(props) {
+    super(props);
+    this.state = {
+      data: []
+    };
+  }
+
+getCandidates() {
+		getApiCandidates()
+     .then(response => {
+		   this.setState({data: response.data[0]})
+ });
+
+}
+  componentDidMount() { 
+		this.getCandidates();
+
+}
 	render() {
 		return (
             <div className="col-md-4 col-sm-4 col-xs-12">
@@ -14,7 +31,7 @@ class CandidatesLeftMenu extends Component {
                         <img src="images/users/profile-avatar.jpg" className="img-responsive img-circle" alt="" />
                     </div>
                     <div className="card-body">
-                        <h3>Mrs. Emilly Copper</h3>
+                        <h3>Mr.{this.state.data.fullName}</h3>
                         <span className="title">A web Designer</span>
                     </div>
                     <ul className="social-network social-circle onwhite">

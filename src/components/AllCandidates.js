@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Layout from './Layout/Layout';
+import ProfileContent from './Layout/ProfileContent';
+import { getApiCandidates } from '../api/requests/'
 
 class AllCandidates extends Component {
 	render() {
@@ -75,192 +77,13 @@ class AllCandidates extends Component {
 		                </div>
 		            </div>
 		        </section>
+				
 		        <section className="categories-list-page light-grey">
 		            <div className="container">
 		                <div className="row">
 		                    <div className="col-md-12 col-sm-12 col-xs-12 nopadding">
-
-		                        <div className="col-md-8 col-sm-12 col-xs-12">
-		                        	<div className="profile-content">
-		                                <div className="card">
-		                                    <div className="firstinfo">
-		                                    	<img src="images/users/12.jpg" alt="" className="img-circle img-responsive" />
-		                                        <div className="profileinfo">
-		                                            <h1> <a href=""> Muhammad Jawad </a></h1>
-		                                            <h3>CEO Ninja</h3>
-		                                            <p className="bio">Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.</p>
-		                                            <div className="profile-skills">
-		                                            	<span> wordpress </span> <span> css3 </span> <span> javascript </span> <span> php </span> <span> laravel </span> <span> woocommerce </span>
-		                                            </div>
-		                                            <div className="hire-btn">
-		                                            	<a href="" className="btn-default" > <i className="fa fa-location-arrow"></i> Hire Me</a>
-		                                            </div>
-		                                        </div>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                            <div className="profile-content">
-		                                <div className="card">
-		                                    <div className="firstinfo">
-		                                    	<img src="images/users/12.jpg" alt="" className="img-circle img-responsive" />
-		                                        <div className="profileinfo">
-		                                            <h1> <a href=""> Arslan Tariq </a></h1>
-		                                            <h3>Designer and Developer</h3>
-		                                            <p className="bio">Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.</p>
-		                                            <div className="profile-skills">
-		                                            	<span> photoshop </span> <span> coral draw </span> <span> javascript </span> <span> htm5 </span> <span> css3 </span> 
-		                                            </div>
-		                                            <div className="hire-btn">
-		                                            	<a href="" className="btn-default" > <i className="fa fa-location-arrow"></i> Hire Me</a>
-		                                            </div>
-		                                        </div>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                            <div className="profile-content">
-		                                <div className="card">
-		                                    <div className="firstinfo">
-		                                    	<img src="images/users/13.jpg" alt="" className="img-circle img-responsive" />
-		                                        <div className="profileinfo">
-		                                            <h1> <a href=""> Humayun Sarfraz </a></h1>
-		                                            <h3>PHP Ninja</h3>
-		                                            <p className="bio">Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.</p>
-		                                            <div className="profile-skills">
-		                                            	<span> wordpress </span> <span> plugin </span> <span> javascript </span> <span> php </span> <span> laravel </span> 
-		                                            </div>
-		                                            <div className="hire-btn">
-		                                            	<a href="" className="btn-default" > <i className="fa fa-location-arrow"></i> Hire Me</a>
-		                                            </div>
-		                                        </div>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                            <div className="profile-content">
-		                                <div className="card">
-		                                    <div className="firstinfo">
-		                                    	<img src="images/users/12.jpg" alt="" className="img-circle img-responsive" />
-		                                        <div className="profileinfo">
-		                                            <h1> <a href=""> Muhammad Umair </a></h1>
-		                                            <h3>Laravel Ninja</h3>
-		                                            <p className="bio">Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.</p>
-		                                            <div className="profile-skills">
-		                                            	<span> laravel </span> <span> css </span> <span> javascript </span> <span> php </span> <span> wordpress </span> 
-		                                            </div>
-		                                            <div className="hire-btn">
-		                                            	<a href="" className="btn-default" > <i className="fa fa-location-arrow"></i> Hire Me</a>
-		                                            </div>
-		                                        </div>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                            <div className="profile-content">
-		                                <div className="card">
-		                                    <div className="firstinfo">
-		                                    	<img src="images/users/14.jpg" alt="" className="img-circle img-responsive" />
-		                                        <div className="profileinfo">
-		                                            <h1> <a href=""> Emily Copper </a></h1>
-		                                            <h3>Laravel Ninja</h3>
-		                                            <p className="bio">Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.</p>
-		                                            <div className="profile-skills">
-		                                            	<span> html5 </span> <span> css3 </span> <span> javascript </span> <span> php </span> <span> laravel </span> 
-		                                            </div>
-		                                            <div className="hire-btn">
-		                                            	<a href="" className="btn-default" > <i className="fa fa-location-arrow"></i> Hire Me</a>
-		                                            </div>
-		                                        </div>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        	<div className="profile-content">
-		                                <div className="card">
-		                                    <div className="firstinfo">
-		                                    	<img src="images/users/12.jpg" alt="" className="img-circle img-responsive" />
-		                                        <div className="profileinfo">
-		                                            <h1> <a href=""> Muhammad Jawad </a></h1>
-		                                            <h3>CEO Ninja</h3>
-		                                            <p className="bio">Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.</p>
-		                                            <div className="profile-skills">
-		                                            	<span> wordpress </span> <span> css3 </span> <span> javascript </span> <span> php </span> <span> laravel </span> <span> woocommerce </span>
-		                                            </div>
-		                                            <div className="hire-btn">
-		                                            	<a href="" className="btn-default" > <i className="fa fa-location-arrow"></i> Hire Me</a>
-		                                            </div>
-		                                        </div>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                            <div className="profile-content">
-		                                <div className="card">
-		                                    <div className="firstinfo">
-		                                    	<img src="images/users/12.jpg" alt="" className="img-circle img-responsive" />
-		                                        <div className="profileinfo">
-		                                            <h1> <a href=""> Arslan Tariq </a></h1>
-		                                            <h3>Designer and Developer</h3>
-		                                            <p className="bio">Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.</p>
-		                                            <div className="profile-skills">
-		                                            	<span> photoshop </span> <span> coral draw </span> <span> javascript </span> <span> htm5 </span> <span> css3 </span> 
-		                                            </div>
-		                                            <div className="hire-btn">
-		                                            	<a href="" className="btn-default" > <i className="fa fa-location-arrow"></i> Hire Me</a>
-		                                            </div>
-		                                        </div>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                            <div className="profile-content">
-		                                <div className="card">
-		                                    <div className="firstinfo">
-		                                    	<img src="images/users/13.jpg" alt="" className="img-circle img-responsive" />
-		                                        <div className="profileinfo">
-		                                            <h1> <a href=""> Humayun Sarfraz </a></h1>
-		                                            <h3>PHP Ninja</h3>
-		                                            <p className="bio">Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.</p>
-		                                            <div className="profile-skills">
-		                                            	<span> wordpress </span> <span> plugin </span> <span> javascript </span> <span> php </span> <span> laravel </span> 
-		                                            </div>
-		                                            <div className="hire-btn">
-		                                            	<a href="" className="btn-default" > <i className="fa fa-location-arrow"></i> Hire Me</a>
-		                                            </div>
-		                                        </div>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                            <div className="profile-content">
-		                                <div className="card">
-		                                    <div className="firstinfo">
-		                                    	<img src="images/users/12.jpg" alt="" className="img-circle img-responsive" />
-		                                        <div className="profileinfo">
-		                                            <h1> <a href=""> Muhammad Umair </a></h1>
-		                                            <h3>Laravel Ninja</h3>
-		                                            <p className="bio">Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.</p>
-		                                            <div className="profile-skills">
-		                                            	<span> laravel </span> <span> css </span> <span> javascript </span> <span> php </span> <span> wordpress </span> 
-		                                            </div>
-		                                            <div className="hire-btn">
-		                                            	<a href="" className="btn-default" > <i className="fa fa-location-arrow"></i> Hire Me</a>
-		                                            </div>
-		                                        </div>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                            <div className="profile-content">
-		                                <div className="card">
-		                                    <div className="firstinfo">
-		                                    	<img src="images/users/14.jpg" alt="" className="img-circle img-responsive" />
-		                                        <div className="profileinfo">
-		                                            <h1> <a href=""> Emily Copper </a></h1>
-		                                            <h3>Laravel Ninja</h3>
-		                                            <p className="bio">Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.</p>
-		                                            <div className="profile-skills">
-		                                            	<span> html5 </span> <span> css3 </span> <span> javascript </span> <span> php </span> <span> laravel </span> 
-		                                            </div>
-		                                            <div className="hire-btn">
-		                                            	<a href="" className="btn-default" > <i className="fa fa-location-arrow"></i> Hire Me</a>
-		                                            </div>
-		                                        </div>
-		                                    </div>
-		                                </div>
-		                            </div>
+		                        <div className="col-md-8 col-sm-12 col-xs-12">	
+                                <ProfileContent></ProfileContent>
 		                        </div>
 		                        <div className="col-md-4 col-sm-12 col-xs-12">
 		                            <aside>
@@ -330,6 +153,7 @@ class AllCandidates extends Component {
 			</Layout>
 		)
 	}
+	
 }
 
 export default AllCandidates;

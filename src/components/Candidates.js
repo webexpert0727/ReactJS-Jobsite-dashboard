@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import Layout from './Layout/Layout';
 import CandidatesBottom from './Layout/CandidatesBottom';
-const baseUrl = 'https://595e63cfffb74e0011021722.mockapi.io/staging/';  // URL to web api
+import { getApiCandidatesUUID } from '../api/requests/'
 
 class Candidates extends Component {
 		constructor(props) {
     super(props);
-
     this.state = {
       data: []
     };
   }
 
-  componentDidMount() {
-	  debugger;
-      axios.get(baseUrl + 'candidates')
+getCandidates() {
+		getApiCandidatesUUID(1)
      .then(response => {
-		  this.setState({data: response.data[0]})
+		   this.setState({data: response.data})
  });
+
 }
+  componentDidMount() { 
+		this.getCandidates();
 
-  render() {
-
+}
+	  render() {
     return (
         <Layout>
 		<section className="dashboard parallex">
@@ -33,7 +33,7 @@ class Candidates extends Component {
 			<div className="col-md-5 col-sm-5 col-xs-12">
 			<div className="user-avatar ">
 			<a href="#"><img src="images/users/12.jpg" alt="" className="img-responsive center-block " /></a>
-			<h3>Arslan Tariq</h3>
+			<h3>{this.state.data.fullName}</h3>
 			</div>
 			</div>
 			<div className="col-md-3 col-sm-3 col-xs-12">
